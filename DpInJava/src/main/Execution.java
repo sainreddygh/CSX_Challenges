@@ -10,7 +10,7 @@ import Challenges.*;
 
 public class Execution {
 	public static void main(String[] args) {
-		TreeNode tree = TreeNodePlugins.listToTree(new String[] {"3","5","1","6","2","0","8","null","null","7","4"});
-		System.out.println(LowestCA.getLCA(tree, tree.left.right.right, tree.right.right).val);
+		int[] input = new int[] {3,5,7,11,19,23,29,41,43,47};
+		System.out.println(superUglyNumber.nthNumber(15, input));
 	}
 }
