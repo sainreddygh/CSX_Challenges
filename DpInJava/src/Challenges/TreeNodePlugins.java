@@ -15,23 +15,19 @@ public class TreeNodePlugins {
 			if(!leftDone) {
 				if(list[i].equals("null")) {
 					q.peek().left = null;
-					System.out.println("null");
 				}else {
 					TreeNode tr =  new TreeNode(Integer.valueOf(list[i]));
 					q.peek().left =tr;			
 					q.add(tr);
-					System.out.println(tr.val);
 				}				
 				leftDone = true;
 			}else {
 				if(list[i].equals("null")) {
 					q.poll().right = null;
-					System.out.println("null");
 				}else {
 					TreeNode current = new TreeNode(Integer.valueOf(list[i]));
 					q.poll().right = current;
 					q.add(current);
-					System.out.println(current.val);
 				}				
 				leftDone = false;
 			}
