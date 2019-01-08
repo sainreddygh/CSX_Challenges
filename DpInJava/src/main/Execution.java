@@ -10,9 +10,8 @@ import Challenges.*;
 
 public class Execution {
 	public static void main(String[] args) {
-		int[] result = SingleNumberIII.get2SingleNumbers(new int[] {1,2,1,3,2,5});
-		for(int n : result) {
-			System.out.println(n);
-		}
+		String a = "1+1i";
+		
+		System.out.println(a.split("\\+")[1]);
 	}
 }
