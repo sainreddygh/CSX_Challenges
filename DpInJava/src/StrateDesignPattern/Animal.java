@@ -6,6 +6,13 @@ public class Animal {
 	private int weight;
 	private int speed;
 	
+	private Flys flyingBehaviour;
+	public String getFlyingBehaviour() {
+		return flyingBehaviour.canFly();
+	}
+	public void setFlyingBehaviour(Flys flyingBehaviour) {
+		this.flyingBehaviour = flyingBehaviour;
+	}
 	public String getName() {
 		return name;
 	}

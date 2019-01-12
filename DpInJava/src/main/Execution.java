@@ -12,7 +12,6 @@ import StrateDesignPattern.Dog;
 
 public class Execution {
 	public static void main(String[] args) {
-		Animal doggy = new Dog();
-		doggy.setName("Tommy");
+		
 	}
 }
