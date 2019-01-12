@@ -10,56 +10,19 @@ import Challenges.*;
 
 public class Execution {
 	public static void main(String[] args) {
-		superUglyNumber.nthNumber(37, primes)
+		int[][] gen = new int[][] {{0,1,0},{0,0,1},{1,1,1},{0,0,0}};
+		for(int i=0; i<gen.length; i++) {
+			for(int j = 0; j<gen[i].length; j++) {
+				System.out.print(gen[i][j]+", ");
+			}
+			System.out.println();
+		}
+		getNextGen.gameOfLife(gen);
+		for(int i=0; i<gen.length; i++) {
+			for(int j = 0; j<gen[i].length; j++) {
+				System.out.print(gen[i][j]+", ");
+			}
+			System.out.println();
+		}
 	}
 }
-
-int[] dp = new int[primes.length];
-List<Integer> ans = new ArrayList<Integer>();
-ans.add(1);        
-while(ans.size()<n){
-    int lastVal = ans.get(ans.size()-1);
-    int currentMin = lastVal;
-    int currentIndex = -1;
-    for(int i =0; i<primes.length; i++){
-    	if(lastVal >= primes[i]*ans.get(dp[i])) {
-    		dp[i]++;
-    	}
-        if(primes[i]*ans.get(dp[i])>lastVal && (currentIndex == -1 || primes[i]*ans.get(dp[i]) <currentMin)){
-        	currentMin = primes[i]*ans.get(dp[i]);
-            dp[i]++;
-            if(currentIndex!=-1){
-                dp[currentIndex]--;
-            }
-            currentIndex = i;
-        }
-    }
-    ans.add(currentMin);
-}
-return ans.get(ans.size()-1);
-
-
-int[] dp = new int[primes.length];
-List<Integer> ans = new ArrayList<Integer>();
-ans.add(1);        
-while(ans.size()<n){
-    int lastVal = ans.get(ans.size()-1);
-    int currentMin = lastVal;
-    int currentIndex = -1;
-    for(int i =0; i<primes.length; i++){
-    	int currentValue = primes[i]*ans.get(dp[i]);
-    	if(lastVal >= currentValue) {
-    		dp[i]++;
-    	}
-        if(currentValue>lastVal && (currentIndex == -1 || currentValue <currentMin)){
-        	currentMin = currentValue;
-            dp[i]++;
-            if(currentIndex!=-1){
-                dp[currentIndex]--;
-            }
-            currentIndex = i;
-        }
-    }
-    ans.add(currentMin);
-}
-return ans.get(ans.size()-1);
