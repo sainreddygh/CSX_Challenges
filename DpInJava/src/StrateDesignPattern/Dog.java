@@ -8,7 +8,7 @@ public class Dog extends Animal {
 	public Dog() {
 		super();
 		setSound("Bark");
-		CanNotfly cannotFly = new CanNotfly();
+		Flys cannotFly = new CanNotfly();
 		setFlyingBehaviour(cannotFly);
 	}
 }
