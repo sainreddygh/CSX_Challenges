@@ -8,10 +8,14 @@ import java.util.Queue;
 
 import Challenges.*;
 import StrateDesignPattern.Animal;
+import StrateDesignPattern.Cat;
 import StrateDesignPattern.Dog;
 
 public class Execution {
 	public static void main(String[] args) {
-		
+		Animal doggy = new Dog();
+		Animal catty =  new Cat();
+		System.out.println(doggy.getFlyingBehaviour());
+		System.out.println(catty.getFlyingBehaviour());
 	}
 }
