@@ -16,14 +16,29 @@ import StrateDesignPattern.Dog;
 
 public class Execution {
 	public static void main(String[] args) {
-		StockPublisher stockPub1 = new StockPublisher();
-		StockObserver ob1 = new StockObserver();
-		stockPub1.register(ob1);
+		
+		
+		TheQueue theQueue = new TheQueue(3);
+		
+		theQueue.insert("16");
+		
+		theQueue.insert("25");
 
-		stockPub1.setAaplPrice(654.34);
-		stockPub1.setGoogPrice(100.24);
-		stockPub1.setIbmPrice(4.34);
-		stockPub1.setAaplPrice(6.34);
+		theQueue.insert("10");
+		theQueue.displayTheQueue();
+		
+
+		
+		theQueue.remove();
+		
+
+		theQueue.displayTheQueue();
+		
+		theQueue.insert("24");
+		
 		
 	}
 }
+
+
+
