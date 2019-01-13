@@ -8,10 +8,47 @@ public class StockPublisher implements Subject{
 	private double aaplPrice;
 	private double googPrice;
 	
-	StockPublisher(){
+	public StockPublisher(){
 		observers =  new ArrayList<Observer>();
+		this.aaplPrice=0;
+		this.ibmPrice=0;
+		this.googPrice=0;
+		
 	}
 	
+
+	public double getIbmPrice() {
+		return ibmPrice;
+	}
+
+
+	public void setIbmPrice(double ibmPrice) {
+		this.ibmPrice = ibmPrice;
+		notifyObservers();
+	}
+
+
+	public double getAaplPrice() {
+		return aaplPrice;
+	}
+
+
+	public void setAaplPrice(double aaplPrice) {
+		this.aaplPrice = aaplPrice;
+		notifyObservers();
+	}
+
+
+	public double getGoogPrice() {
+		return googPrice;
+	}
+
+
+	public void setGoogPrice(double googPrice) {
+		this.googPrice = googPrice;
+		notifyObservers();
+	}
+
 
 	@Override
 	public void register(Observer newObserver) {
