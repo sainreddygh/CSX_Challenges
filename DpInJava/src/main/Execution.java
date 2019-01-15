@@ -16,8 +16,8 @@ import StrateDesignPattern.Dog;
 
 public class Execution {
 	public static void main(String[] args) {
-		String s = "sainath";
-		System.out.println(s.substring(1));
+		String s = "255";
+		System.out.println(Integer.valueOf(s.substring(1)));
 	}
 }
 
