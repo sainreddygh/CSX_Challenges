@@ -16,11 +16,8 @@ import StrateDesignPattern.Dog;
 
 public class Execution {
 	public static void main(String[] args) {
-//		char[][] board  =  new char[][] {{'E','E','E','E','E'},{'E','E','M','E','E'},{'E','E','E','E','E'},{'E','E','E','E','E'}};		
-//		MinesWeeper.updateBoard(board, new int[] {3,0});
-		int a = 4;
-		char b = (char) a;
-		System.out.println(b);
+		String s = "sainath";
+		System.out.println(s.substring(0,1));
 	}
 }
 
