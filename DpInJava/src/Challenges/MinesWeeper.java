@@ -13,7 +13,7 @@ public class MinesWeeper {
 	}
 	
 	public static void revealAdjacent(char[][] board, int[] reveal){
-	    int adjCount = 0;
+		int adjCount = 0;
 	    for(int i = Math.max(0, reveal[0]-1); i<Math.min(board.length, reveal[0]+1); i++){
 	        for(int j = Math.max(0, reveal[1]-1); j<Math.min(board[i].length, reveal[1]+1); j++){
 	            if(board[i][j] == 'M') adjCount++;
@@ -22,10 +22,10 @@ public class MinesWeeper {
 	    if(adjCount>0){
 	        board[reveal[0]][reveal[1]] = (char) adjCount;
 	    }else {
+            board[reveal[0]][reveal[1]] = 'B';
 	        for(int i = Math.max(0, reveal[0]-1); i<Math.min(board.length, reveal[0]+1); i++){
 	            for(int j = Math.max(0, reveal[1]-1); j<Math.min(board[i].length, reveal[1]+1); j++){
-	                if(i == reveal[0] && j == reveal[j])continue;
-	                revealAdjacent(board, new int[]{i,j});
+	                if(board[i][j] == 'E') revealAdjacent(board, new int[]{i,j});
 	            }
 	        }
 	    }

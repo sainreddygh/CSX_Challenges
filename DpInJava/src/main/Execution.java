@@ -16,8 +16,8 @@ import StrateDesignPattern.Dog;
 
 public class Execution {
 	public static void main(String[] args) {
-		int[] a = new int[2];
-		SuperUglyNumber2.nthSuperUglyumber(1, a);		
+		char[][] board  =  new char[][] {{'E','E','E','E','E'},{'E','E','M','E','E'},{'E','E','E','E','E'},{'E','E','E','E','E'}};		
+		MinesWeeper.updateBoard(board, new int[] {3,0});
 	}
 }
 
