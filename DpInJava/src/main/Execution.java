@@ -16,8 +16,10 @@ import StrateDesignPattern.Dog;
 
 public class Execution {
 	public static void main(String[] args) {
-		String s = "255";
-		System.out.println(Integer.valueOf(s.substring(1)));
+		IpAddresses.getIpAddresses("25525511135");
+//		String s = "sai.nath";
+//		String s1 = s.split("\\.")[0];
+//		System.out.println(s1);
 	}
 }
 
