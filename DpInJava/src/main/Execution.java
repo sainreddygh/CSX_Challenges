@@ -16,27 +16,8 @@ import StrateDesignPattern.Dog;
 
 public class Execution {
 	public static void main(String[] args) {
-		
-		
-		TheQueue theQueue = new TheQueue(3);
-		
-		theQueue.insert("16");
-		
-		theQueue.insert("25");
-
-		theQueue.insert("10");
-		theQueue.displayTheQueue();
-		
-
-		
-		theQueue.remove();
-		
-
-		theQueue.displayTheQueue();
-		
-		theQueue.insert("24");
-		
-		
+		int[] a = new int[2];
+		SuperUglyNumber2.nthSuperUglyumber(1, a);		
 	}
 }
 
