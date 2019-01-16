@@ -16,8 +16,9 @@ import StrateDesignPattern.Dog;
 
 public class Execution {
 	public static void main(String[] args) {
-		List<String> ans = IpAddresses.getIpAddresses("25525511135");
-		for(String s : ans) System.out.println(s);
+		Long L = 8L;
+		int i = 10;
+		System.out.println(i-L);
 	}
 }
 
