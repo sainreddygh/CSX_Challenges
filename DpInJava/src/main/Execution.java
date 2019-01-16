@@ -16,9 +16,9 @@ import StrateDesignPattern.Dog;
 
 public class Execution {
 	public static void main(String[] args) {
-		Long L = 8L;
-		int i = 10;
-		System.out.println(i-L);
+		for(int i : Deprost.getTopol(new int[][] {{2,4}, {3,6}, {2,3}, {4,6}})) {
+			System.out.println(i);
+		}
 	}
 }
 

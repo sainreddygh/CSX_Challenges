@@ -9,7 +9,7 @@ import java.util.Queue;
 
 
 public class Deprost {
-	public List<Integer> getTopol(int[][] edges){
+	public static List<Integer> getTopol(int[][] edges){
 		List<Integer> ans =  new ArrayList<Integer>();
 		Map<Integer, Integer> deps = new HashMap<Integer, Integer>(); 
 		Queue<Integer> q = new LinkedList<Integer>();
