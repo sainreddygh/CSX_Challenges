@@ -16,9 +16,9 @@ import StrateDesignPattern.Dog;
 
 public class Execution {
 	public static void main(String[] args) {
-		for(int i : Deprost.getTopol(new int[][] {{4,2}, {6,3}, {3,2}, {6,4}})) {
-			System.out.println(i);
-		}
+		PriorityQueue<String> pq =  new PriorityQueue<String>();
+		pq.add("Sainath");
+		
 	}
 }
 
