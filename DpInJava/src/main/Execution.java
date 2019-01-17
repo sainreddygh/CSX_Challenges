@@ -16,9 +16,10 @@ import StrateDesignPattern.Dog;
 
 public class Execution {
 	public static void main(String[] args) {
-		PriorityQueue<String> pq =  new PriorityQueue<String>();
-		pq.add("Sainath");
-		
+		int a = -1;
+		int b = 8;
+		int c = (int) (Math.pow(a, 2) + Math.pow(b, 2));
+		System.out.println(c);
 	}
 }
 
