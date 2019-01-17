@@ -23,24 +23,17 @@ public class Execution {
 	}
 	List<List<Integer>> getMiniDistancePoints(int totalLocations, List<List<Integer>> locations, int numDliveries) {
 		List<List<Integer>> ans =  new ArrayList<>();
-		PriorityQueue<Location> pq = new PriorityQueue<Location>((a,b)->distance(b)-distance(a));
+		PriorityQueue<List<Integer>> pq = new PriorityQueue<List<Integer>>((a,b)->distance(b)-distance(a));
 		for(List<Integer> l : locations) {
-			Location loc = new Location(l);
-			pq.add(loc);
+			pq.add(l);
 		}
 		for(int i=0; i<numDliveries; i++) {
-			ans.add(pq.poll().location);
+			ans.add(pq.poll());
 		}
 		return ans;
 	}
-	int distance(Location l) {
-		return l.location.get(0) * l.location.get(0) + l.location.get(1)* l.location.get(1);
-	}
-	class Location{
-		List<Integer> location;
-		public Location(List<Integer> location) {
-			this.location = location;
-		}		
+	int distance(List<Integer> l) {
+		return l.get(0) * l.get(0) + l.get(1)* l.get(1);
 	}
 }
 
