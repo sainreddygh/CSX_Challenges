@@ -1,6 +1,7 @@
 package main;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Observer;
@@ -16,10 +17,11 @@ import StrateDesignPattern.Dog;
 
 public class Execution {
 	public static void main(String[] args) {
-		int a = -1;
-		int b = 8;
-		int c = (int) (Math.pow(a, 2) + Math.pow(b, 2));
-		System.out.println(c);
+		int[] input  =  new int[] {3,2,1,5,6,4,8};
+//		for(int i : Arrays.copyOfRange(input,0,7)) {
+//    		System.out.print(i);
+//    	}
+		System.out.println(KthLargestNumber.findKthLargest(input, 2));
 		
 	}
 }
