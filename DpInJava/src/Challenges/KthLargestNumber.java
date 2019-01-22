@@ -4,7 +4,6 @@ import java.util.Arrays;
 
 public class KthLargestNumber {
 	public static int findKthLargest(int[] nums, int k) {
-        int done = 0;
         return sort(nums, 0, nums.length-1, nums.length-k);
     }
     static int sort(int[] nums, int start, int end, int k){
@@ -29,37 +28,6 @@ public class KthLargestNumber {
         }else return nums[k];     
     }
     static int partition(int[] nums, int left, int right, int pivot_index){
-        
-//         int pivot = nums[pivot_index];
-//         // 1. move pivot to end
-//         swap(nums, pivot_index, right);
-//         int store_index = left;
-
-//         // 2. move all smaller elements to the left
-//         for (int i = left; i <= right; i++) {
-//           if (nums[i] < pivot) {
-//             swap(nums, store_index, i);
-//             store_index++;
-//           }
-//         }
-
-//         // 3. move pivot to its final place
-//         swap(nums,store_index, right);
-
-//         return store_index;
-//        int pivotValue = nums[pivot_index];
-//        int i = left;
-//        int j = right;
-//        while(i<j){
-//        	for(int l : nums) System.out.print(l);
-//        	System.out.println();
-//        	System.out.println("i is "+i+" and j is "+j);
-//            if(nums[i]>= pivotValue){
-//                swap(nums, i, j);
-//                j--;
-//            }else i++;
-//        }
-//        return i-1;
     	int pivotVal = nums[pivot_index];
     	swap(nums, right, pivot_index);
     	int partIndex = left;
