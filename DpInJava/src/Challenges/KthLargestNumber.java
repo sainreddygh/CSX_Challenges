@@ -9,8 +9,6 @@ public class KthLargestNumber {
     static int sort(int[] nums, int start, int end, int k){
         if(start ==  end) return nums[start];
         int pivot = (start+end)/2;
-        System.out.println("start is "+start+" and end is "+end);
-        System.out.println();
         int partition = partition(nums, start, end, pivot);
         System.out.println("pivot is "+pivot+" partition Index is "+partition);
         if(partition>k){            
