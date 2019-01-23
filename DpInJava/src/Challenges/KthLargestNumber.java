@@ -20,12 +20,7 @@ public class KthLargestNumber {
         	System.out.print(nums[i]);
         }
         System.out.println();     
-        System.out.println();        
-        if(partition>k){            
-            return sort(nums, start, partition-1, k);
-        }else if(partition<k){
-            return sort(nums, partition+1, end, k);
-        }else return nums[k];     
+        System.out.println(); 
     }
     static int partition(int[] nums, int left, int right, int pivot_index){
     	int pivotVal = nums[pivot_index];
