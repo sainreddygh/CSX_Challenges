@@ -17,10 +17,7 @@ import StrateDesignPattern.Dog;
 
 public class Execution {
 	public static void main(String[] args) {
-		int[] input  =  new int[] {1,4,5,7,9,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,14,16};
-		for(int i=0; i<10; ++i) {
-			System.out.println(i);
-		}
+		List<int[]> ans =  new ArrayList<int[]>();
 	}
 }
 
