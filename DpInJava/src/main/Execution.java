@@ -19,8 +19,7 @@ import StrateDesignPattern.Dog;
 
 public class Execution {
 	public static void main(String[] args) {
-		Random rand =  new Random();
-		System.out.println(rand.nextInt(-2));
+		System.out.println(ThreeSumClosest.threeSumClosest(new int[] {-5,-4,0,1}, 0));
 		
 	}
 }
