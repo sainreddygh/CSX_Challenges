@@ -17,12 +17,8 @@ import StrateDesignPattern.Dog;
 
 public class Execution {
 	public static void main(String[] args) {
-		int[] input  =  new int[] {3,2,1,5,6,4,8};
-//		for(int i : Arrays.copyOfRange(input,0,7)) {
-//    		System.out.print(i);
-//    	}
-		System.out.println(KthLargestNumber.findKthLargest(input, 2));
-		
+		int[] input  =  new int[] {1,4,5,7,9,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,14,16};
+		System.out.println(Arrays.binarySearch(input, 10));
 	}
 }
 
