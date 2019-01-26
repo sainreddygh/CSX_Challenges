@@ -3,6 +3,11 @@ package Challenges;
 import java.util.Stack;
 
 public class ReverseLinkedList2 {
+	public static class ListNode {
+      int val;
+      ListNode next;
+      ListNode(int x) { val = x; }
+	}
 	public static ListNode reverseBetween(ListNode head, int m, int n) {
         if(m==n) return head;
         int currentPos = 0;
