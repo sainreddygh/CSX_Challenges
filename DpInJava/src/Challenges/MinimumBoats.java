@@ -3,7 +3,7 @@ package Challenges;
 import java.util.Arrays;
 
 public class MinimumBoats {
-	public int numRescueBoats(int[] people, int limit) {
+	public static int numRescueBoats(int[] people, int limit) {
         Arrays.sort(people);
         int i = 0;
         int j = people.length-1;
