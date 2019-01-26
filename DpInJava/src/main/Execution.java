@@ -19,7 +19,7 @@ import StrateDesignPattern.Dog;
 
 public class Execution {
 	public static void main(String[] args) {
-		System.out.println(ThreeSumClosest.threeSumClosest(new int[] {-5,-4,0,1}, 0));
+		System.out.println(MinimumBoats.numRescueBoats(new int[] {3,2,2,1}, 3));
 		
 	}
 }
