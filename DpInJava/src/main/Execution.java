@@ -19,8 +19,8 @@ import StrateDesignPattern.Dog;
 
 public class Execution {
 	public static void main(String[] args) {
-		System.out.println(MinimumBoats.numRescueBoats(new int[] {3,2,2,1}, 3));
-		
+		int[] ans =  new int[] {3,6,8};
+		System.out.println(Arrays.binarySearch(ans, 1,2, 4));
 	}
 }
 
