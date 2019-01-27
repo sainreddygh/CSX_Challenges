@@ -12,7 +12,7 @@ public class LongestFibSubSeq {
                 if(res>0){
                     dp[res] =  Math.max(dp[res], dp[i]+2);
                     if(ans<dp[res]) {
-                    	System.out.println(res);
+                    	System.out.println("res is "+res+" and ans is "+ ans);
                     }
                     ans = Math.max(ans, dp[res]);
                 }
