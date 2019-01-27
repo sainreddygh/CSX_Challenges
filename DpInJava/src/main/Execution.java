@@ -19,8 +19,8 @@ import StrateDesignPattern.Dog;
 
 public class Execution {
 	public static void main(String[] args) {
-		int[] ans =  new int[] {3,6,8};
-		System.out.println(Arrays.binarySearch(ans, 1,2, 4));
+		int ans = LongestFibSubSeq.getMaxLength(new int[] {2,4,5,6,7,8,11,13,14,15,21,22,34});
+		System.out.println(ans);
 	}
 }
 
