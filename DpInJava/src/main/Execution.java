@@ -19,10 +19,7 @@ import StrateDesignPattern.Dog;
 
 public class Execution {
 	public static void main(String[] args) {
-		int ans = ShortestSubArray.getLength(new int[] {84,-37,32,40,95}, 167);
+		int ans = ShortestSubArray.getLength(new int[] {-28,81,-20,28,-29}, 89);
 		System.out.println(ans);
 	}
 }
-
-
-
