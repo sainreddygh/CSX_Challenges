@@ -12,19 +12,17 @@ public class ShortestSubArray {
             if(A[p2] >=K) return 1;
             if(p1==p2){
                 inc = true;
-                currentSum+=A[++p2];
+                p2++;
+                currentSum+= p2==N ? 0 : A[p2];
             }else if(inc && currentSum>= K){
                 ans = Math.min(ans, p2-p1+1);
                 inc = false;
                 currentSum-=A[p1++];
             }else if(inc){
                 currentSum+=A[++p2];
-            }else if(!inc && currentSum<K){
-                inc = true;
-                currentSum+=A[++p2];                
             }else if(!inc){
-                ans = Math.min(ans, p2-p1+1);
-                currentSum-=A[p1--];                
+                ans = currentSum>=K ? Math.min(ans, p2-p1+1) : ans;
+                currentSum-=A[p1++];                
             }
         }
         return ans>N ? -1 : ans;
