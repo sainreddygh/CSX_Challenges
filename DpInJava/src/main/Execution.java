@@ -19,7 +19,18 @@ import StrateDesignPattern.Dog;
 
 public class Execution {
 	public static void main(String[] args) {
-		int ans = ShortestSubArray.getLength(new int[] {-28,81,-20,28,-29}, 89);
-		System.out.println(Integer.MAX_VALUE);
+		System.out.println(getRandomVal());
+	}
+	static int getRandomVal() {
+		class Point{
+			int x;
+			int y;
+			Point(int x, int y){
+				this.x = x;
+				this.y = y;
+			}
+		}
+		Point p = new Point(2,3);
+		return p.x;
 	}
 }
