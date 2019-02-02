@@ -19,6 +19,8 @@ import StrateDesignPattern.Dog;
 
 public class Execution {
 	public static void main(String[] args) {
-		System.out.println();
+		int[][] pairs = new int[][] {{1,2}, {2,3}, {3,4}};
+		
+		System.out.println(MaxLenPairChain.getLongestChainLength(pairs));
 	}
 }
