@@ -19,18 +19,6 @@ import StrateDesignPattern.Dog;
 
 public class Execution {
 	public static void main(String[] args) {
-		System.out.println(getRandomVal());
-	}
-	static int getRandomVal() {
-		class Point{
-			int x;
-			int y;
-			Point(int x, int y){
-				this.x = x;
-				this.y = y;
-			}
-		}
-		Point p = new Point(2,3);
-		return p.x;
+		System.out.println();
 	}
 }
