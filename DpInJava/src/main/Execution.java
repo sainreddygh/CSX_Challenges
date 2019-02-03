@@ -19,7 +19,9 @@ import StrateDesignPattern.Dog;
 
 public class Execution {
 	public static void main(String[] args) {
-		String s = "Sainath";
-		System.out.println(s);
+		String s = "Sainath reddy";
+		String[] sArray =  s.split(" ");
+		for(String sr : sArray)
+		System.out.println(sr);
 	}
 }
