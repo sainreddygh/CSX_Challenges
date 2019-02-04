@@ -19,9 +19,6 @@ import StrateDesignPattern.Dog;
 
 public class Execution {
 	public static void main(String[] args) {
-		String s = "   Sainath reddy   ";
-		String[] sArray =  s.split(" ");
-		for(String sr : sArray)
-		System.out.println(sr);
+		System.out.println(IsSquareMatchSticks.makesquare(new int[] {1,1,2,2,2}));
 	}
 }
