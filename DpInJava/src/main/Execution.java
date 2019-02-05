@@ -19,6 +19,7 @@ import StrateDesignPattern.Dog;
 
 public class Execution {
 	public static void main(String[] args) {
-		System.out.println(IsSquareMatchSticks.makesquare(new int[] {1,1,2,2,2}));
+		boolean[] dp =  new boolean[2];
+		System.out.println(dp[1]);
 	}
 }
