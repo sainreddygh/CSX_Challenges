@@ -19,7 +19,6 @@ import StrateDesignPattern.Dog;
 
 public class Execution {
 	public static void main(String[] args) {
-		boolean[] dp =  new boolean[2];
-		System.out.println(dp[1]);
+		System.out.println(KEqualPartsofArray.canPartitionKSubsets(new int[] {1,1,1,2,2,2}, 3));
 	}
 }
