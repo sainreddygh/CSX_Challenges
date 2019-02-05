@@ -3,7 +3,7 @@ package Challenges;
 import java.util.Arrays;
 
 public class KEqualPartsofArray {
-	public boolean canPartitionKSubsets(int[] nums, int k) {
+	public static boolean canPartitionKSubsets(int[] nums, int k) {
         int N = nums.length;
         Arrays.sort(nums);
         int sum = Arrays.stream(nums).sum();
