@@ -11,7 +11,7 @@ public class KthElementFromSortedMatrix {
 		for(int i=0; i<m; i++) {
 			heap.offer(new tuple(i,0,nums[i][0]));
 		}
-		while(k>0) {
+		while(k>1) {
 			tuple t = heap.poll();
 			if(t.y<n-1) {
 				heap.offer(new tuple(t.x, t.y+1, nums[t.x][t.y+1]));

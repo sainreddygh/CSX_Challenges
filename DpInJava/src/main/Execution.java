@@ -20,6 +20,6 @@ import StrateDesignPattern.Dog;
 public class Execution {
 	public static void main(String[] args) {
 		KthElementFromSortedMatrix kem =  new KthElementFromSortedMatrix();
-		System.out.println(kem.getKthsmallestElement(new int[][] {{1,2},{3,4}}, 2));
+		System.out.println(kem.getKthsmallestElement(new int[][] {{1,2},{3,4}}, 1));
 	}
 }
