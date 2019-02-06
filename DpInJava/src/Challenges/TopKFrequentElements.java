@@ -18,7 +18,7 @@ public class TopKFrequentElements {
         }
         List<Integer> ans =  new ArrayList<>();
         while(k>0){
-            ans.add(q.poll);
+            ans.add(q.poll());
         }
         return ans;
 	}
