@@ -19,6 +19,10 @@ public class KEqualPartsofArray {
             for (int i = 0; i < N; i++) {
                 int future = state | (1 << i);
                 if (state != future && !dp[future]) {
+                	for(int m = 0; m<dp.length; m++) {
+                		if(dp[m]) System.out.print(m+ ", ");
+                	}
+                	System.out.println();
                     if (nums[i] <= target - (total[state] % target)) {
                         dp[future] = true;
                         total[future] = total[state] + nums[i];
