@@ -19,6 +19,7 @@ import StrateDesignPattern.Dog;
 
 public class Execution {
 	public static void main(String[] args) {
-		System.out.println(KEqualPartsofArray.canPartitionKSubsets(new int[] {1,1,1,2,2,2}, 3));
+		KthElementFromSortedMatrix kem =  new KthElementFromSortedMatrix();
+		System.out.println(kem.getKthsmallestElement(new int[][] {{1,2},{3,4}}, 2));
 	}
 }
