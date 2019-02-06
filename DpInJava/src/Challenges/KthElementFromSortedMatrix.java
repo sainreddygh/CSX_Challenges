@@ -5,12 +5,20 @@ import java.util.PriorityQueue;
 
 public class KthElementFromSortedMatrix {
 	public int getKthsmallestElement(int[][] nums, int k) {
-		int ans =0;
+		int m = nums.length;
+		int n = nums[0].length;
 		PriorityQueue<tuple> heap = new PriorityQueue<tuple>();
-		for(int i=0; i<nums.length; i++) {
+		for(int i=0; i<m; i++) {
 			heap.offer(new tuple(i,0,nums[i][0]));
 		}
-		return ans;
+		while(k>0) {
+			tuple t = heap.poll();
+			if(t.y<n-1) {
+				heap.offer(new tuple(t.x, t.y+1, nums[t.x][t.y+1]));
+			}
+			k--;
+		}
+		return heap.poll().val;
 	}
 	
 	class tuple implements Comparable<tuple>{
