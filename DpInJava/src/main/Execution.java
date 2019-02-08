@@ -19,6 +19,7 @@ import StrateDesignPattern.Dog;
 
 public class Execution {
 	public static void main(String[] args) {
-		System.out.println(Integer.MAX_VALUE);
+		CoinChange2 c =  new CoinChange2();
+		c.getCombinations(5,  new int[] {1,2,5});
 	}
 }
