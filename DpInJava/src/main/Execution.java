@@ -19,7 +19,16 @@ import StrateDesignPattern.Dog;
 
 public class Execution {
 	public static void main(String[] args) {
-		CoinChange2 c =  new CoinChange2();
-		System.out.println(c.getCombinations(100,  new int[] {99,1}));
+		Random r = new Random();
+		int[] check =  new int[10];
+		int n = 100000000;
+		while(n>0) {
+			int i = r.nextInt(10);
+			check[i]++;
+			n--;
+		}
+		for(int i =0; i<check.length; i++) {
+			System.out.println("value for "+i+" index is :"+ check[i]);
+		}
 	}
 }
