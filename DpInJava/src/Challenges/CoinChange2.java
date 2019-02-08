@@ -1,7 +1,10 @@
 package Challenges;
 
+import java.util.Arrays;
+
 public class CoinChange2 {
 	public int getCombinations(int amount, int[] coins) {
+		Arrays.sort(coins);
 		return helper(amount, coins, 0);
 		
 	}
