@@ -20,6 +20,6 @@ import StrateDesignPattern.Dog;
 public class Execution {
 	public static void main(String[] args) {
 		CoinChange2 c =  new CoinChange2();
-		c.getCombinations(5,  new int[] {1,2,5});
+		System.out.println(c.getCombinations(5,  new int[] {1,2,5}));
 	}
 }
