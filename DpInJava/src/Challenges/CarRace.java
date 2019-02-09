@@ -17,7 +17,7 @@ public class CarRace {
             int p =  target - cars[i].position;
             if((double) p/s >currentTime  ){
                 fleets++;
-                currentTime = p/s;
+                currentTime = (double) p/s;
             }
         }
         return fleets;
