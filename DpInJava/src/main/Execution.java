@@ -1,9 +1,12 @@
 package main;
 
+import java.util.ArrayDeque;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Map;
 import java.util.Observer;
 import java.util.PriorityQueue;
 import java.util.Queue;
@@ -19,16 +22,12 @@ import StrateDesignPattern.Dog;
 
 public class Execution {
 	public static void main(String[] args) {
-		Random r = new Random();
-		int[] check =  new int[10];
-		int n = 100000000;
-		while(n>0) {
-			int i = r.nextInt(10);
-			check[i]++;
-			n--;
-		}
-		for(int i =0; i<check.length; i++) {
-			System.out.println("value for "+i+" index is :"+ check[i]);
-		}
+		Random r =  new Random();
+	//	System.out.println(r.nextInt(983));
+		CarRace cr =  new CarRace();
+		System.out.println(cr.carFleet(17, new int[] {8,12,16,11,7}, new int[] {6,9,10,9,7}));
+		
+		
+		
 	}
 }
