@@ -39,12 +39,16 @@ public class EvalueatFraction {
         for(Point p : points){
             totalNum+=p.num*lcm/p.den;
         }
+        StringBuilder sb = new StringBuilder();
+        if(totalNum<0){
+            sb.append("-");
+            totalNum*=-1;
+        }
+        
         int gcd = getGcd(totalNum, lcm);
         totalNum/=gcd;
         lcm/=gcd;
-        StringBuilder sb = new StringBuilder();
-        if(totalNum<0)
-            sb.append("-");
+                
         return sb.append(totalNum).append("/").append(lcm).toString();
     }
     
