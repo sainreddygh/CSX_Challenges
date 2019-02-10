@@ -23,7 +23,10 @@ import StrateDesignPattern.Dog;
 public class Execution {
 	public static void main(String[] args) {
 		Random r =  new Random();
-		System.out.println(r.nextInt(983));
+		//System.out.println(r.nextInt(983));
+		
+		EvalueatFraction e = new EvalueatFraction();
+		System.out.println(e.fractionAddition("-1/2+1/2+1/3"));
 		
 		
 	}

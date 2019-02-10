@@ -37,7 +37,7 @@ public class EvalueatFraction {
         
         int totalNum = 0;
         for(Point p : points){
-            totalNum+=p.num*lcm;
+            totalNum+=p.num*lcm/p.den;
         }
         int gcd = getGcd(totalNum, lcm);
         totalNum/=gcd;
