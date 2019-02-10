@@ -23,11 +23,9 @@ import StrateDesignPattern.Dog;
 public class Execution {
 	public static void main(String[] args) {
 		Random r =  new Random();
-	//	System.out.println(r.nextInt(983));
-		CarRace cr =  new CarRace();
-		System.out.println(cr.carFleet(17, new int[] {8,12,16,11,7}, new int[] {6,9,10,9,7}));
-		
+		System.out.println(r.nextInt(983));
 		
 		
 	}
 }
+
