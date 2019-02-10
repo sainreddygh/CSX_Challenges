@@ -23,12 +23,16 @@ import StrateDesignPattern.Dog;
 public class Execution {
 	public static void main(String[] args) {
 		Random r =  new Random();
-		//System.out.println(r.nextInt(983));
+		//System.out.println(r.nextInt(988));
 		
-		EvalueatFraction e = new EvalueatFraction();
-		System.out.println(e.fractionAddition("-1/2+1/2+1/3"));
-		
-		
+		List<List<Integer>>[] dp =  new ArrayList[1];
+		dp[0] =  new ArrayList();
+		List<Integer> adding =  new ArrayList();
+		adding.add(34);
+		adding.add(62);
+		adding.add(21);
+		dp[0].add(adding);
+		System.out.println(dp[0]);
 	}
 }
 
