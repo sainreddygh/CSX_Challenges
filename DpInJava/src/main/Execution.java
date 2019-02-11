@@ -24,11 +24,8 @@ public class Execution {
 	public static void main(String[] args) {
 		Random r =  new Random();
 		//System.out.println(r.nextInt(988));
-//		for(int i =-100; i<100; i++) {
-//			System.out.println((char) ('a'+i));
-//		}
-		String s = "sai.Nath";
-		System.out.println(Character.toString('f'));
+		MskingPersonalInformation mpi =  new MskingPersonalInformation();
+		System.out.println(mpi.maskPII("1(234)567-890"));
 	}
 }
 

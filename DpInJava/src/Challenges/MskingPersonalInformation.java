@@ -22,8 +22,8 @@ public class MskingPersonalInformation {
                     pN[pointer--] =c;
                 }
             }
-            if(pointer>3) return pN.toString().substring(pointer+1);
-            else return "+"+pN.toString().substring(pointer+1);
+            if(pointer>2) return new String(pN).substring(pointer+1);
+            else return "+"+new String(pN).substring(pointer+1);
         }
     }
 
