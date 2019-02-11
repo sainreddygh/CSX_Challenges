@@ -23,7 +23,15 @@ import StrateDesignPattern.Dog;
 public class Execution {
 	public static void main(String[] args) {
 		Random r =  new Random();
-		System.out.println(r.nextInt(988));
+		//System.out.println(r.nextInt(988));
+		Trie t1 =  new Trie();
+		t1.insert("a");
+		Trie t2 =  new Trie();
+		t2.insert("ap");
+		Trie t3 =  new Trie();
+		t3.insert("ar");
+		String abc = "sainath";
+		System.out.println(abc.substring(1,abc.length()));
 	}
 }
 
