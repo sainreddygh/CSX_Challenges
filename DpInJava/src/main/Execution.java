@@ -24,8 +24,14 @@ public class Execution {
 	public static void main(String[] args) {
 		Random r =  new Random();
 		//System.out.println(r.nextInt(988));
-		MskingPersonalInformation mpi =  new MskingPersonalInformation();
-		System.out.println(mpi.maskPII("1(234)567-890"));
+		//Map<Integer, Integer> map =  new HashMap();
+
+        //Map<Integer, Boolean> map =  new HashMap();
+        System.out.println(Integer.MAX_VALUE);
+        System.out.println(1000000000);
+        List<Integer> ans =  new ArrayList();
+		
+
 	}
 }
 
