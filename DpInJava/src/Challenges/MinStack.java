@@ -23,7 +23,7 @@ public class MinStack {
     }
     
     public void pop() {
-        if(s.peek() == minS.peek()) minS.pop();
+        if(s.peek().intValue() == minS.peek().intValue()) minS.pop();
         s.pop();
     }
     
