@@ -24,9 +24,6 @@ public class Execution {
 	public static void main(String[] args) {
 		Random r =  new Random();
 		//System.out.println(r.nextInt(988));
-	
-		int i = 11;
-		System.out.println(i & 1);
 
 	}
 }
