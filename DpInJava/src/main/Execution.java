@@ -24,13 +24,9 @@ public class Execution {
 	public static void main(String[] args) {
 		Random r =  new Random();
 		//System.out.println(r.nextInt(988));
-		//Map<Integer, Integer> map =  new HashMap();
-
-        //Map<Integer, Boolean> map =  new HashMap();
-        System.out.println(Integer.MAX_VALUE);
-        System.out.println(1000000000);
-        List<Integer> ans =  new ArrayList();
-		
+	
+		int i = 11;
+		System.out.println(i & 1);
 
 	}
 }
