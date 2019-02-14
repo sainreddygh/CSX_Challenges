@@ -24,6 +24,14 @@ public class Execution {
 	public static void main(String[] args) {
 		Random r =  new Random();
 		//System.out.println(r.nextInt(988));
+		MinStack ms =  new MinStack();
+		ms.push(512);
+		ms.push(-1024);
+		ms.push(-1024);
+		ms.push(512);
+		ms.pop();
+		ms.getMin();
+		
 
 	}
 }
