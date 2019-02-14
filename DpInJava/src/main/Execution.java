@@ -30,9 +30,11 @@ public class Execution {
 		ms.push(-1024);
 		ms.push(512);
 		ms.pop();
-		ms.getMin();
-		
-
+		System.out.println(ms.getMin());
+		ms.pop();
+		System.out.println(ms.getMin());
+		ms.pop();
+		System.out.println(ms.getMin());
 	}
 }
 
