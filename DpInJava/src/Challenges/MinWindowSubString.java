@@ -14,7 +14,7 @@ public class MinWindowSubString {
         Arrays.fill(tA,Integer.MIN_VALUE);
         for(int i = 0; i<t.length(); i++){
             int k =t.charAt(i)-'A'; 
-            if(tA[k]==-1) tA[k]=1;
+            if(tA[k]==Integer.MIN_VALUE) tA[k]=1;
             else tA[k]++;
         }
         for(int i=0; i<s.length(); i++){
@@ -24,7 +24,7 @@ public class MinWindowSubString {
             q.offer(i);
             tA[c]--;
             if(tA[c]==0)targetL--;
-            while(tA[s.charAt(q.peek())-'A']<0 && tA[s.charAt(q.peek())-'A']>s.length()-1){
+            while(tA[s.charAt(q.peek())-'A']<0 && tA[s.charAt(q.peek())-'A']>-1-s.length()){
                 q.poll();
                 tA[s.charAt(q.peek())-'A']++;
                 f=q.peek();
