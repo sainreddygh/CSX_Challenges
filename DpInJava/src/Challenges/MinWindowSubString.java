@@ -1,5 +1,9 @@
 package Challenges;
 
+import java.util.ArrayDeque;
+import java.util.Arrays;
+import java.util.Deque;
+
 public class MinWindowSubString {
 	public String minWindow(String s, String t) {
         int f=-1;
