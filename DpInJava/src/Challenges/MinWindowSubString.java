@@ -23,7 +23,7 @@ public class MinWindowSubString {
             if(f==-1)f=i;
             q.offer(i);
             tA[c]--;
-            if(tA[c]==0)targetL--;
+            if(tA[c]>=0)targetL--;
             while(tA[s.charAt(q.peek())-' ']<0 && tA[s.charAt(q.peek())-' ']>-1-s.length()){
                 tA[s.charAt(q.peek())-' ']++;
                 q.poll();
