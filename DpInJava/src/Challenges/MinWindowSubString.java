@@ -25,9 +25,8 @@ public class MinWindowSubString {
             tA[c]--;
             if(tA[c]==0)targetL--;
             while(tA[s.charAt(q.peek())-'A']<0 && tA[s.charAt(q.peek())-'A']>-1-s.length()){
-                q.poll();
                 tA[s.charAt(q.peek())-'A']++;
-                f=q.peek();
+                q.poll();
             }
             if(targetL ==0 && e-f>i-q.peek()){
                 f =q.peek();
