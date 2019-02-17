@@ -24,8 +24,8 @@ public class Execution {
 	public static void main(String[] args) {
 		Random r =  new Random();
 		//System.out.println(r.nextInt(988));
-		
-		System.out.println(Integer.toBinaryString(10));
+		MinWindowSubString ms = new MinWindowSubString();
+		System.out.println(ms.minWindow("ADOBECODEBANC","ABC"));
 	}
 }
 
