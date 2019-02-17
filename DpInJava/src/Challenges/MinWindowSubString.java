@@ -19,7 +19,7 @@ public class MinWindowSubString {
         }
         for(int i=0; i<s.length(); i++){
             int c = s.charAt(i)-'A';
-            if(tA[c]==-1) continue;
+            if(tA[c]==Integer.MIN_VALUE) continue;
             if(f==-1)f=i;
             q.offer(i);
             tA[c]--;
