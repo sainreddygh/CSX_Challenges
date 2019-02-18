@@ -24,8 +24,6 @@ public class Execution {
 	public static void main(String[] args) {
 		Random r =  new Random();
 		//System.out.println(r.nextInt(988));
-		MinWindowSubString ms = new MinWindowSubString();
-		System.out.println(ms.minWindow("aa","aa"));
 	}
 }
 
