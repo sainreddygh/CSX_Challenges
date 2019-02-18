@@ -16,10 +16,11 @@ public class QReconstructionByHeight {
         for(int i=0; i<people.length; i++) {
         	list.add(people[i][1], people[i]);
         }
-        int[][] ans =  new list.toArray();
+        int[][] ans =  new int[people.length][2];
+        for(int i=0; i<list.size(); i++) {
+        	ans[i]=list.get(i);
+        }
         return ans;
-        
-        
     }
     class Point{
         int x,y;
