@@ -24,8 +24,8 @@ public class Execution {
 	public static void main(String[] args) {
 		Random r =  new Random();
 		//System.out.println(r.nextInt(988));
-		MaximizeNumber mn = new MaximizeNumber();
-		System.out.println(mn.maximumSwap(2314));
+		String s = "[]";
+		System.out.println(s.substring(1,1).split(",").length);
 	}
 }
 

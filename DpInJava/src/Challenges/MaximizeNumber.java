@@ -13,7 +13,7 @@ public class MaximizeNumber {
 			num/=10;
 		}
 		int minIndex = --i;
-		while(minIndex>0 && values[minIndex]>values[minIndex-1])minIndex--;
+		while(minIndex>0 && values[minIndex]>=values[minIndex-1])minIndex--;
 		if(minIndex==0) return originalNum;
 		int maxIndex = minIndex;
 		for(int j = maxIndex; j>=0; j--) {
