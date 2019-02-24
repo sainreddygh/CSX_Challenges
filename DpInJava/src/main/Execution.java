@@ -23,7 +23,7 @@ import StrateDesignPattern.Dog;
 public class Execution {
 	public static void main(String[] args) {
 		IsSubString isS =  new IsSubString();
-		System.out.println(isS.isSubsequence("afre", "ajgsfptkeritn"));
+		System.out.println(isS.isSubsequence("afre", "ajgsptkeritnfre"));
 	}
 }
 
