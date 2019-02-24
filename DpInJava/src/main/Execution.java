@@ -22,10 +22,8 @@ import StrateDesignPattern.Dog;
 
 public class Execution {
 	public static void main(String[] args) {
-		Random r =  new Random();
-		//System.out.println(r.nextInt(988));
-		String s = "[]";
-		System.out.println(s.substring(1,1).split(",").length);
+		IsSubString isS =  new IsSubString();
+		System.out.println(isS.isSubsequence("afre", "ajgsfptkeritn"));
 	}
 }
 
