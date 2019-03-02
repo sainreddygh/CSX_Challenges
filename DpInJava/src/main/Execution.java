@@ -22,7 +22,7 @@ import StrateDesignPattern.Dog;
 
 public class Execution {
 	public static void main(String[] args) {
-		System.out.println(1000000000);
+		int[] n =  new int[3];
+		System.out.println(Integer.MAX_VALUE);
 	}
 }
-
