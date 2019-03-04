@@ -74,7 +74,7 @@ public class LFUCache {
 	    }
 	    
 	    void placeTop(DLList c){
-	        while(c.left.frequency==c.frequency){
+	        while(c.left.frequency<=c.frequency && c.left!=head){
 	            DLList left = c.left;
 	            DLList right = c.right;
 	            left.left.right = c;
