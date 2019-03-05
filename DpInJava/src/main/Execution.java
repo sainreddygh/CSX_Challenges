@@ -22,16 +22,11 @@ import StrateDesignPattern.Dog;
 
 public class Execution {
 	public static void main(String[] args) {
-		LFUCache lfu = new LFUCache(2);
-		lfu.put(1, 1);
-		lfu.put(2, 2);
-		System.out.println(lfu.get(1));
-		lfu.put(3, 3);
-		System.out.println(lfu.get(2));
-		System.out.println(lfu.get(3));
-		lfu.put(4, 4);
-		System.out.println(lfu.get(1));
-		System.out.println(lfu.get(3));
-		System.out.println(lfu.get(4));
+		CutOffTrees co =  new CutOffTrees();
+		List<Integer> l1 =  new ArrayList(Arrays.asList(1,2,2));
+		List<Integer> l2 =  new ArrayList(Arrays.asList(0,0,4));
+		List<Integer> l3 =  new ArrayList(Arrays.asList(7,2,2));
+		List<List<Integer>> forest =  new ArrayList(Arrays.asList(l1,l2,l3));
+		System.out.println(co.cutOffTree(forest));
 	}	
 }
