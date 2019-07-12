@@ -1,0 +1,16 @@
+.main-div {
+    width : 100px;
+    background-color: #555;
+}
+
+.main-div a{
+    display : block;
+    padding : 16px;
+    font-size : 50px;
+    text-align: center;
+    color : white;
+}
+
+.active {
+    color : black
+}
