@@ -1,0 +1,25 @@
+.acc{
+    border : 1px solid black;
+    border-radius: 5px;
+    overflow : hidden;
+}
+.acc-head {
+    background-color : #555;
+    padding : 10px;
+}
+.acc-head p {
+    display : inline;
+}
+.acc-head i {
+    float : right
+}
+.acc-content {
+    background-color : #999;
+    padding : 0 10px;
+    transition: all 0.5s ease;
+    max-height: 0px;
+    overflow : hidden;
+}
+.acc-content p{
+    margin : 0px;
+}
