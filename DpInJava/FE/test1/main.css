@@ -7,10 +7,15 @@
     display : block;
     padding : 16px;
     font-size : 50px;
+    transition : all 0.3s ease;
     text-align: center;
     color : white;
 }
 
+.main-div a:hover{
+    background-color : #000;
+}
+
 a.active {
-    color : black
+    color : #4CAF50;
 }
